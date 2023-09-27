@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./_css/bootstrap.css">
+      <link rel="stylesheet" href="./index_style.css">
+      <link rel="stylesheet" href="./about_style.css">
+      <script src="./_js/popper.min.js"></script>
+      <script src="./_js/bootstrap.min.js"></script>
+      <script src="./index_javascript.js"></script>
+
+      <!-- font-family -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+
+      <!-- css icon -->
+      <link href='https://css.gg/css' rel='stylesheet'>
+      <link href='https://unpkg.com/css.gg@2.0.0/icons/css/edit-unmask.css' rel='stylesheet'>
+
+
+      <title>Repair</title>
+</head>
+
+<body onload="loadeing()">
+      <div id="loader">
+            <div id="loader_p">
+                  <div class="three-body">
+                        <div class="three-body__dot"></div>
+                        <div class="three-body__dot"></div>
+                        <div class="three-body__dot"></div>
+                  </div>
+            </div>
+      </div>
+      <nav>
+            <div class="topnav fixed-top rounded-bottom">
+                  <a href="./index.html">Home</a>
+                  <a href="./about.html">About</a>
+                  <a href="./furniture.html">Furniture</a>
+                  <a href="./repair.html">Repair</a>
+                  <a href="./contact.html">預約</a>
+            </div>
+
+            <div class="logo"><a href="./index.html"><img src="./logo/工作區域 2.png" class="img-fluid"></a></div>
+
+            <!-- 漢堡列 -->
+            <div>
+                  <button id="navbtn" onclick="openbtn()">
+                        <div>
+                              <div class="innercolor "></div>
+                              <div class="innercolor "></div>
+                              <div class="innercolor "></div>
+                        </div>
+                  </button>
+                  <div class="opennav" id="noneNav">
+                        <button onclick="closenav()" style="font-size:30px;">&times;</button>
+                        <div>
+                              <a href="./index.html">Home</a>
+                              <a href="./about.html">About</a>
+                              <a href="./furniture.html">Furniture</a>
+                              <a href="./repair.html">Repair</a>
+                              <a href="./contact.html">預約</a>
+                        </div>
+
+                  </div>
+            </div>
+      </nav>
+      <div>
+            <img src="./_img/repair_01.jpg" class="img-fluid re_imgtop" alt="">
+      </div>
+      <div class="container re_conment">
+            <h5>為了，</h5>
+            <h5>能夠更長久的陪伴。</h5>
+            <p>精心修理或修整顧客珍貴的傢俱。
+                  傢俱的生產國、製造商、年代、種類無關。
+                  除了家庭用傢俱外,還經常接受酒店等住宿設施及餐廳傢俱、裝飾傢俱的修理。</p>
+      </div>
+      <div class="container re_conment">
+            <h3>修繕委託流程</h3>
+            <h4>1.諮詢</h4>
+            <p>可通過預約單或電話、郵件、來店諮詢。</p>
+            <h4>2.概算報價、同意書</h4>
+            <p>通過圖片等確認修理內容及傢俱規格後，提供概算報價。
+                  參考價格請參閱本維修保養價目表。</p>
+            <h4>3.現物確認</h4>
+            <img src="./_img/repair_03.jpeg" class="img-fluid" alt="">
+            <p>直接攜帶或配送需修理的家具至店內。</p>
+            <h4>4.最終報價、承諾</h4>
+            <p>確認實物後確定作業內容後，會提供最終價格。</p>
+            <h4>5.作業開始</h4>
+            <img src="./_img/repair_05.jpeg" class="img-fluid" alt="">
+            <p>擁有豐富傢俱修理實績的木工、椅墊、塗裝各工匠精心修理或翻拍客戶珍貴的傢俱。</p>
+            <h4>6.作業完成、付款通知</h4>
+            <p>作業完成時會通知您取件及付款。</p>
+            <h4>7.取件</h4>
+            <img src="./_img/firstview-sp.webp" class="img-fluid" alt="">
+            <p>確認付款後，可以來店領取或配送到府。</p>
+            <p>如果說傢俱的種類和修理內容也各不相同，那麼顧客委託修理的"理由"也多種多樣。
+                  在聽取修理諮詢的過程中，詢問其"理由"時經常會感到驚訝、打動人心、感到溫暖。</p>
+      </div>
+
+
+      <footer class=" container-fluid foot-wrap mt-5">
+            <div class="">
+                  <div class="row">
+                        <div class="col-6 mt-2 listfoot-top">
+                              <ul class="listfoot">
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./furniture.html">Furniture</a></li>
+                                    <li><a href="./repair.html">Repair</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-6 mt-2 listfoot-top">
+                              <ul class="listfoot">
+                                    <li><a href="#" class="chinesefont">價目表</a></li>
+                                    <li><a href="#" class="chinesefont">販售商品委託</a></li>
+                                    <li><a href="#" class="chinesefont">法規</a></li>
+                                    <li><a href="#">online Shop</a></li>
+                              </ul>
+                        </div>
+                        <!-- <div style="height: 1px; max-width: 90%; background-color: black; margin: auto;"></div> -->
+                        <div class="col-12 mt-4 listfoot-bom">
+                              <p>地址：302 新竹縣竹北市光明六路東二段381號</p>
+                              <p>營業時間：12:00~19:00 固休一</p>
+                              <p>電話：03-5482123</p>
+                              <p>Mail：hiyoritem000@email.com</p>
+                        </div>
+
+                  </div>
+            </div>
+            </div>
+
+      </footer>
+
+</body>
+
+</html>

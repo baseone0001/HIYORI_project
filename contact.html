@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./_css/bootstrap.css">
+      <link rel="stylesheet" href="./index_style.css">
+      <link rel="stylesheet" href="./about_style.css">
+      <script src="./_js/popper.min.js"></script>
+      <script src="./_js/bootstrap.min.js"></script>
+      <script src="./index_javascript.js"></script>
+
+      <!-- font-family -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+
+      <!-- css icon -->
+      <link href='https://css.gg/css' rel='stylesheet'>
+      <link href='https://unpkg.com/css.gg@2.0.0/icons/css/edit-unmask.css' rel='stylesheet'>
+
+
+      <title>預約</title>
+</head>
+
+<body onload="loadeing()">
+      <div id="loader">
+            <div id="loader_p">
+                  <div class="three-body">
+                        <div class="three-body__dot"></div>
+                        <div class="three-body__dot"></div>
+                        <div class="three-body__dot"></div>
+                  </div>
+            </div>
+      </div>
+      <nav>
+            <div class="topnav fixed-top rounded-bottom">
+                  <a href="./index.html">Home</a>
+                  <a href="./about.html">About</a>
+                  <a href="./furniture.html">Furniture</a>
+                  <a href="./repair.html">Repair</a>
+                  <a href="./contact.html">預約</a>
+            </div>
+
+            <div class="logo"><a href="./index.html"><img src="./logo/工作區域 2.png" class="img-fluid"></a></div>
+
+            <!-- 漢堡列 -->
+            <div>
+                  <button id="navbtn" onclick="openbtn()">
+                        <div>
+                              <div class="innercolor "></div>
+                              <div class="innercolor "></div>
+                              <div class="innercolor "></div>
+                        </div>
+                  </button>
+                  <div class="opennav" id="noneNav">
+                        <button onclick="closenav()" style="font-size:30px;">&times;</button>
+                        <div>
+                              <a href="./index.html">Home</a>
+                              <a href="./about.html">About</a>
+                              <a href="./furniture.html">Furniture</a>
+                              <a href="./repair.html">Repair</a>
+                              <a href="./contact.html">預約</a>
+                        </div>
+
+                  </div>
+            </div>
+      </nav>
+
+      <div>
+            <img src="./_img/contact_01.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="container c_conment">
+            <h5>Contact </h5>
+            <p>請通過以下表格隨時諮詢委託、諮詢、服務相關問題及要求等。
+                  如果決定了尺寸和規格，請儘量詳細填寫。</p>
+            <div style="height: 150px;"></div>
+            <div class="row container">
+                  <div class="col-4 c_word">
+                        <label for="userName">
+                              <div>姓 名：</div>
+                        </label>
+                        <label for="userTel">
+                              <div>電話號碼：</div>
+                        </label>
+                        <div>電子郵件：</div>
+                        <div>通訊地址：</div>
+                  </div>
+                  <div class="col-8 c_box">
+                        <input type="text" id="userName" placeholder="請輸入中文全名" required><span></span>
+                        <div style="height: 10px;"></div>
+                        <input type="tel" id="userTel" placeholder="09-00000000" required><span></span>
+                        <div style="height: 10px;"></div>
+                        <input type="email" required><span></span>
+                        <div style="height: 10px;"></div>
+                        <input type="text" required><span></span>
+                  </div>
+            </div>
+            <div class="row container">
+                  <div class="col-4 c_word">
+                        <div>家具種類：</div>
+                  </div>
+                  <div class="col-8 c_box">
+                        <input type="text" required><span></span>
+                  </div>
+            </div>
+            <div class="row container">
+                  <div class="col-4 c_word">
+                        <div>長(cm)：</div>
+                        <div>寬(cm)：</div>
+                        <div>深(cm)：</div>
+                  </div>
+                  <div class="col-8 c_box">
+                        <input type="text">
+                        <div style="height: 10px;"></div>
+                        <input type="text">
+                        <div style="height: 10px;"></div>
+                        <input type="text">
+                  </div>
+            </div>
+            <div class="row container">
+                  <div class="col-4 c_word">
+                        <div>預算(新台幣)：</div>
+                        <div></div>
+                        <div></div>
+                  </div>
+                  <div class="col-8 c_box">
+                        <input type="text" required>
+                        <div style="height: 10px;">至</div>
+                        <input type="text" required>
+                  </div>
+            </div>
+            <div class="row container">
+                  <div class="col-4 c_word">
+                        <div> 維修需求：</div>
+                        <div></div>
+                        <div></div>
+                  </div>
+                  <div class="col-8 c_box">
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                  </div>
+            </div>
+
+            <div style="height: 200px;"></div>
+
+            <button class="c_btn container">送出</button>
+
+            <div style="height: 200px;"></div>
+
+
+
+      </div>
+
+      <footer class=" container-fluid foot-wrap mt-5">
+            <div class="">
+                  <div class="row">
+                        <div class="col-6 mt-2 listfoot-top">
+                              <ul class="listfoot">
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./furniture.html">Furniture</a></li>
+                                    <li><a href="./repair.html">Repair</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-6 mt-2 listfoot-top">
+                              <ul class="listfoot">
+                                    <li><a href="#" class="chinesefont">價目表</a></li>
+                                    <li><a href="#" class="chinesefont">販售商品委託</a></li>
+                                    <li><a href="#" class="chinesefont">法規</a></li>
+                                    <li><a href="#">online Shop</a></li>
+                              </ul>
+                        </div>
+                        <!-- <div style="height: 1px; max-width: 90%; background-color: black; margin: auto;"></div> -->
+                        <div class="col-12 mt-4 listfoot-bom">
+                              <p>地址：302 新竹縣竹北市光明六路東二段381號</p>
+                              <p>營業時間：12:00~19:00 固休一</p>
+                              <p>電話：03-5482123</p>
+                              <p>Mail：hiyoritem000@email.com</p>
+                        </div>
+
+                  </div>
+            </div>
+            </div>
+
+      </footer>
+
+
+
+
+</body>
+
+</html>

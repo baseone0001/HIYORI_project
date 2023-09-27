@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./_css/bootstrap.css">
+      <link rel="stylesheet" href="./index_style.css">
+      <link rel="stylesheet" href="./about_style.css">
+      <script src="./_js/popper.min.js"></script>
+      <script src="./_js/bootstrap.min.js"></script>
+      <script src="./index_javascript.js"></script>
+
+      <!-- font-family -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+
+      <!-- css icon -->
+      <link href='https://css.gg/css' rel='stylesheet'>
+      <link href='https://unpkg.com/css.gg@2.0.0/icons/css/edit-unmask.css' rel='stylesheet'>
+
+
+      <title>Furniture</title>
+</head>
+
+<body onload="loadeing()">
+      <div id="loader">
+            <div id="loader_p">
+                  <div class="three-body">
+                        <div class="three-body__dot"></div>
+                        <div class="three-body__dot"></div>
+                        <div class="three-body__dot"></div>
+                  </div>
+            </div>
+      </div>
+      <nav>
+            <div class="topnav fixed-top rounded-bottom">
+                  <a href="./index.html">Home</a>
+                  <a href="./about.html">About</a>
+                  <a href="./furniture.html">Furniture</a>
+                  <a href="./repair.html">Repair</a>
+                  <a href="./contact.html">預約</a>
+            </div>
+
+            <div class="logo"><a href="./index.html"><img src="./logo/工作區域 2.png" class="img-fluid"></a></div>
+
+            <!-- 漢堡列 -->
+            <div>
+                  <button id="navbtn" onclick="openbtn()">
+                        <div>
+                              <div class="innercolor "></div>
+                              <div class="innercolor "></div>
+                              <div class="innercolor "></div>
+                        </div>
+                  </button>
+                  <div class="opennav" id="noneNav">
+                        <button onclick="closenav()" style="font-size:30px;">&times;</button>
+                        <div>
+                              <a href="./index.html">Home</a>
+                              <a href="./about.html">About</a>
+                              <a href="./furniture.html">Furniture</a>
+                              <a href="./repair.html">Repair</a>
+                              <a href="./contact.html">預約</a>
+                        </div>
+
+                  </div>
+            </div>
+      </nav>
+      <div style="height: 100px;"></div>
+      <div class="container f_conment">
+            <h5>Original Furniture</h5>
+            <p>我們製作的傢俱可以長久珍惜地使用:以想要繼續使用的設計、易於修理的結構、優質的材質和收尾爲理念。
+                  因爲是每天使用的產品，所以要小心謹慎的製作。</p>
+            <p>原創傢俱是接受訂單後開始製作的訂單生產。
+                  選擇您想要的型號、樹種、尺寸、面料等，訂購後到完成需要等待約1個半月~2個月。
+                  此外，還接受標準規格以外的樹種、尺寸、顏色的單獨訂購製作，請隨時與我們協商。</p>
+      </div>
+      <div>
+            <div>
+                  <div class="f_itemtable">
+                        <button onclick="chair()">椅子 Chair</button>
+                        <button onclick="sofa()">沙發 Sofa</button>
+                        <button onclick="stool()">凳子 Stool</button>
+                        <button onclick="table()">桌子 Table</button>
+                        <button onclick="other()">其他 Other</button>
+                  </div>
+                  <div id="f_itemlist">
+                        <div class="f_itembtn rounded-top">
+                              <span class="">家具分類</span>
+                              <button onclick="itembtnop()" class="itemicon gg-chevron-down-o" id="itemopen"></button>
+                              <button onclick="itembtned()" class="itemicon gg-chevron-up-o" id="itemclose"></button>
+                        </div>
+                        <div class="f_itembtn_list" id="itemlist">
+                              <a onclick="chair()">椅子</a>
+                              <a onclick="sofa()">沙發</a>
+                              <a onclick="stool()">凳子</a>
+                              <a onclick="table()">桌子</a>
+                              <a onclick="other()">其他</a>
+                        </div>
+
+
+                  </div>
+            </div>
+            <div style="height: 30px;"></div>
+
+            <div class="f_itemimg container rounded">
+                  <div class="row" id="team_chair">
+                        <div class="col-12 col-md-6">
+                              <img src="./_img/items/chair_01.jpeg" class="img-fluid">
+                              <img src="./_img/items/chair_03.jpeg" class="img-fluid">
+                              <img src="./_img/items/chair_05.jpeg" class="img-fluid">
+                              <img src="./_img/items/chair_07.jpeg" class="img-fluid">
+                              <img src="./_img/items/chair_09.jpeg" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6">
+                              <img src="./_img/items/chair_02.jpeg" class="img-fluid" alt="2">
+                              <img src="./_img/items/chair_04.jpeg" class="img-fluid" alt="4">
+                              <img src="./_img/items/chair_06.jpeg" class="img-fluid" alt="6">
+                              <img src="./_img/items/chair_08.jpeg" class="img-fluid" alt="8">
+                              <img src="./_img/items/chair_10.jpeg" class="img-fluid" alt="10">
+                        </div>
+                  </div>
+                  <div class="row" id="team_sofa">
+                        <div class="col-12 col-md-6">
+                              <img src="./_img/items/sofa_01.jpeg" class="img-fluid" alt="1">
+                              <img src="./_img/items/sofa_03.webp" class="img-fluid" alt="3">
+                        </div>
+                        <div class="col-12 col-md-6">
+                              <img src="./_img/items/sofa_02.webp" class="img-fluid" alt="2">
+                              <img src="./_img/items/sofa_04.webp" class="img-fluid" alt="4">
+                        </div>
+                  </div>
+                  <div class="row" id="team_stool">
+                        <div class="col-12">
+                              <img src="./_img/items/stool_01.jpeg" class="img-fluid" alt="1">
+                              <img src="./_img/items/stool_02.jpeg" class="img-fluid" alt="2">
+                              <img src="./_img/items/stool_03.jpeg" class="img-fluid" alt="3">
+                        </div>
+                  </div>
+                  <div class="row" id="team_table">
+                        <div class="col-12 col-md-6">
+                              <img src="./_img/items/table_01.jpeg" class="img-fluid" alt="1">
+                              <img src="./_img/items/table_03.jpeg" class="img-fluid" alt="3">
+                              <img src="./_img/items/table_05.jpeg" class="img-fluid" alt="5">
+                        </div>
+                        <div class="col-12 col-md-6">
+                              <img src="./_img/items/table_02.jpeg" class="img-fluid" alt="2">
+                              <img src="./_img/items/table_04.jpeg" class="img-fluid" alt="4">
+                              <img src="./_img/items/table_06.jpeg" class="img-fluid" alt="6">
+                        </div>
+                  </div>
+                  <div class="row" id="team_other">
+                        <div class="col-12 col-md-6">
+                              <img src="./_img/items/other_01.jpeg" class="img-fluid" alt="1">
+                              <img src="./_img/items/other_03.jpeg" class="img-fluid" alt="3">
+                        </div>
+                        <div class="col-12 col-md-6">
+                              <img src="./_img/items/other_02.jpeg" class="img-fluid" alt="2">
+                              <img src="./_img/items/other_04.jpeg" class="img-fluid" alt="4">
+                        </div>
+                  </div>
+
+
+            </div>
+      </div>
+      </div>
+
+
+      <footer class=" container-fluid foot-wrap mt-5">
+            <div class="">
+                  <div class="row">
+                        <div class="col-6 mt-2 listfoot-top">
+                              <ul class="listfoot">
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./furniture.html">Furniture</a></li>
+                                    <li><a href="./repair.html">Repair</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-6 mt-2 listfoot-top">
+                              <ul class="listfoot">
+                                    <li><a href="#" class="chinesefont">價目表</a></li>
+                                    <li><a href="#" class="chinesefont">販售商品委託</a></li>
+                                    <li><a href="#" class="chinesefont">法規</a></li>
+                                    <li><a href="#">online Shop</a></li>
+                              </ul>
+                        </div>
+                        <!-- <div style="height: 1px; max-width: 90%; background-color: black; margin: auto;"></div> -->
+                        <div class="col-12 mt-4 listfoot-bom">
+                              <p>地址：302 新竹縣竹北市光明六路東二段381號</p>
+                              <p>營業時間：12:00~19:00 固休一</p>
+                              <p>電話：03-5482123</p>
+                              <p>Mail：hiyoritem000@email.com</p>
+                        </div>
+
+                  </div>
+            </div>
+            </div>
+
+      </footer>
+
+</body>
+
+</html>

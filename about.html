@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./_css/bootstrap.css">
+      <link rel="stylesheet" href="./index_style.css">
+      <link rel="stylesheet" href="./about_style.css">
+      <script src="./_js/popper.min.js"></script>
+      <script src="./_js/bootstrap.min.js"></script>
+      <script src="./index_javascript.js"></script>
+
+      <!-- font-family -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+
+      <!-- css icon -->
+      <link href='https://css.gg/css' rel='stylesheet'>
+      <link href='https://unpkg.com/css.gg@2.0.0/icons/css/edit-unmask.css' rel='stylesheet'>
+
+
+      <title>About</title>
+</head>
+
+<body onload="loadeing()">
+      <div id="loader">
+            <div id="loader_p">
+                  <div class="three-body">
+                        <div class="three-body__dot"></div>
+                        <div class="three-body__dot"></div>
+                        <div class="three-body__dot"></div>
+                  </div>
+            </div>
+      </div>
+
+      <nav>
+            <div class="topnav fixed-top rounded-bottom">
+                  <a href="./index.html">Home</a>
+                  <a href="./about.html">About</a>
+                  <a href="./furniture.html">Furniture</a>
+                  <a href="./repair.html">Repair</a>
+                  <a href="./contact.html">預約</a>
+            </div>
+
+            <div class="logo"><a href="./index.html"><img src="./logo/工作區域 2.png" class="img-fluid"></a></div>
+
+            <!-- 漢堡列 -->
+            <div>
+                  <button id="navbtn" onclick="openbtn()">
+                        <div>
+                              <div class="innercolor "></div>
+                              <div class="innercolor "></div>
+                              <div class="innercolor "></div>
+                        </div>
+                  </button>
+                  <div class="opennav" id="noneNav">
+                        <button onclick="closenav()" style="font-size:30px;">&times;</button>
+                        <div>
+                              <a href="./index.html">Home</a>
+                              <a href="./about.html">About</a>
+                              <a href="./furniture.html">Furniture</a>
+                              <a href="./repair.html">Repair</a>
+                              <a href="./contact.html">預約</a>
+                        </div>
+
+                  </div>
+            </div>
+      </nav>
+      <div><img src="./_img/about_img01.jpg" class="img-fluid mt-4" style="max-height:100vh;"></div>
+      <div class="ab_word">About日和</div>
+      <div id="downicon">
+            <div class="gg-chevron-double-down" id="ab_icon"></div>
+      </div>
+      <div style="height:50px ;"></div>
+      <div class="ab_title">
+            <p>About 關於</p>
+      </div>
+      <div class="ab_contect container mt-5">
+            <p><b>日和</b>是一家小傢飾店，由喜歡製造產品的同事組成，木工、椅墊、塗裝等各工匠和設計師執着於純木材的原創傢俱和定製傢俱的製作、傢俱的修理和翻拍。</p>
+            <p>在日常生活中，接觸手工作業殘留的傢俱的瞬間，愛惜隨着時間變化而變化的傢俱的瞬間，看到破舊的傢俱乾淨利落地復活的瞬間。
+                  希望以"製作傢俱"、"修理傢俱"爲基礎，通過產品製造給顧客的生活帶來暫時的激動瞬間。</p>
+      </div>
+      <!-- <h5></h5>
+      <p>- 營業時間- 12:00~19:00 不定休</p>
+      <p>- 聯絡方式- Mail：hiyoritem000@email.com</p>
+      <p>- 地圖- 地址：302 新竹縣竹北市光明六路東二段381號</p>
+      <p>- 預約方式- 電話預約：03-5482123- 線上預約：instagram</p> -->
+      <div class="ab_list mb-5 container">
+            <ul>
+                  <li>營業時間</li>
+                  <li>聯絡方式</li>
+                  <li>地址</li>
+                  <li>預約方式</li>
+            </ul>
+            <ul>
+                  <li>12:00~19:00 不定休</li>
+                  <li>Mail：hiyoritem000@email.com</li>
+                  <li>302 新竹縣竹北市光明六路東二段381號</li>
+                  <li>電話預約：03-5482123</li>
+                  <li>線上預約：instagram</li>
+            </ul>
+      </div>
+      <!-- <div style="height:50px ;"></div> -->
+
+      <div class="container" style="text-align: center;">
+            <!-- <h5 class="mt-5">地圖</h5> -->
+            <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.4946409286517!2d121.033839215002!3d24.812752484076544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683701a6c74a53%3A0x58590fb1a624b7d2!2zMzAy5paw56u557ij56u55YyX5biC5YWJ5piO5YWt6Lev5p2x5LqM5q61Mzgx6Jmf!5e0!3m2!1szh-TW!2stw!4v1687745823611!5m2!1szh-TW!2stw"
+                  width="80%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+
+
+
+      <!-- 頁尾 -->
+      <footer class=" container-fluid foot-wrap mt-5">
+            <div class="">
+                  <div class="row">
+                        <div class="col-6 mt-2 listfoot-top">
+                              <ul class="listfoot">
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./furniture.html">Furniture</a></li>
+                                    <li><a href="./repair.html">Repair</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-6 mt-2 listfoot-top">
+                              <ul class="listfoot">
+                                    <li><a href="#" class="chinesefont">價目表</a></li>
+                                    <li><a href="#" class="chinesefont">販售商品委託</a></li>
+                                    <li><a href="#" class="chinesefont">法規</a></li>
+                                    <li><a href="#">online Shop</a></li>
+                              </ul>
+                        </div>
+                        <!-- <div style="height: 1px; max-width: 90%; background-color: black; margin: auto;"></div> -->
+                        <div class="col-12 mt-4 listfoot-bom">
+                              <p>地址：302 新竹縣竹北市光明六路東二段381號</p>
+                              <p>營業時間：12:00~19:00 固休一</p>
+                              <p>電話：03-5482123</p>
+                              <p>Mail：hiyoritem000@email.com</p>
+                        </div>
+
+                  </div>
+            </div>
+            </div>
+
+      </footer>
+</body>
+
+
+</html>

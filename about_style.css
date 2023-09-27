@@ -1,0 +1,298 @@
+.ab_word {
+      font-size: 35px;
+      color: white;
+      letter-spacing: 10px;
+      position: relative;
+      bottom: 100px;
+      left: 75%;
+}
+#ab_icon {
+      width: 50px;
+      height: 50px;
+}
+
+.ab_title {
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 3px;
+      margin: 20px;
+
+}
+.ab_contect {
+      width: 80vw;
+      max-width: 768px;
+      /* height: 400px; */
+      padding-top: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 40px;
+      letter-spacing: 2px;
+      /* background-color: aqua; */
+}
+.ab_list {
+      text-align: center;
+}
+.ab_list li {
+      list-style-type: none;
+      /* margin: 5px; */
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+}
+.ab_list ul:nth-child(1) {
+      display: inline-block;
+      margin-left: -20px;
+      /* background-color: aqua; */
+      width: 112px;
+      text-align: end;
+}
+.ab_list ul:nth-child(2) {
+      /* background-color: lightcoral; */
+      width: 360px;
+      display: inline-block;
+      position: relative;
+      top:34px;
+      text-align: left;
+      margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+      .ab_word {
+            display: none;
+      }
+}
+
+/* ---------------------furniture--------------------------- */
+
+.f_conment {
+      /* background-color: aqua; */
+      /* height: 500px; */
+      max-width: 710px;
+}
+.f_conment h5 {
+      letter-spacing: 3px;
+      text-align: center;
+      font-size: 25px;
+      margin: 20px;
+}
+.f_conment p {
+    
+      /* background-color: lemonchiffon; */
+      line-height: 40px;
+      letter-spacing: 2px;
+      padding: 20px;
+}
+.f_itemtable {
+      list-style-type: none;
+      /* background-color: antiquewhite; */
+      text-align: center;
+}
+.f_itemtable button {
+      padding: 10px;
+      width: 100px;
+      color: white;
+      letter-spacing: 4px;
+      background-color:#979797;
+      transition: 0.5s;
+}
+.f_itemtable button:hover {
+      background-color: #DCDCDC;
+      border-radius: 10px;
+      color: black;
+}
+.f_itemimg {
+      height: 1000px;
+      background-color: white;
+      border:1px solid #DCDCDC;
+      margin-top: 30px;
+      overflow:scroll;
+}
+
+#team_sofa {
+      display: none;
+}
+#team_stool {
+      display: none;
+}
+#team_table {
+      display: none;
+}
+#team_other {
+      display: none;
+}
+img[src*="items"] {
+      transition: 0.3s;
+}
+
+img[src*="items"]:hover {
+      border: 1px solid #DCDCDC;
+      border-radius: 30px;
+}
+#f_itemlist {
+      text-align: center;
+      display: none;
+      
+}
+
+.f_itembtn {
+      background-color:gray;
+      color: white;
+      width: 430px;
+      padding: 10px;
+      letter-spacing: 10px;
+      display: inline-block;
+}
+.f_itembtn_list {
+      height: 0;
+      display: inline-block;
+      width: 430px;
+      position: relative;
+      color: white;
+      letter-spacing: 10px;
+      overflow: hidden;
+}
+.itemicon {
+      color: white;
+      position: relative;
+      bottom: 4px;
+}
+#itemopen {
+      display: inline-block;
+}
+#itemclose {
+      display: none;
+}
+
+
+.f_itembtn_list a {
+      display: inline-block;
+      background-color: #979797;
+      width: 430px;
+      padding: 10px;
+      transition: 0.5s;
+}
+
+.f_itembtn_list a:hover {
+      background-color: #DCDCDC;
+}
+
+@media screen and (max-width: 768px) {
+      .f_itemtable button {
+            display: none;
+      }
+      #f_itemlist {
+            display:block;
+      }
+      
+}
+/* ------------------------repair-------------------------- */
+
+.re_conment {
+      max-width: 710px;
+      margin-top: 50px;
+}
+.re_conment h5 {
+      letter-spacing: 3px;
+      /* text-align: center; */
+      font-size: 25px;
+      margin: 20px;
+}
+.re_conment h3 {
+      letter-spacing: 3px;
+      text-align: center;
+      margin: 100px;
+}
+.re_conment h4 {
+      letter-spacing: 3px;
+      margin-top: 50px;
+}
+.re_conment p {
+    
+      /* background-color: lemonchiffon; */
+      line-height: 40px;
+      letter-spacing: 2px;
+      padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+      .re_imgtop {
+            margin-top:60px;
+      }
+}
+
+/* --------------------------contact-------------------- */
+
+
+.c_conment {
+      max-width: 710px;
+      margin-top: 50px;
+      padding: 20px;
+}
+.c_conment h5 {
+      letter-spacing: 3px;
+      /* text-align: center; */
+      font-size: 25px;
+      
+}
+.c_conment p {
+    
+      /* background-color: lemonchiffon; */
+      line-height: 40px;
+      letter-spacing: 2px;
+      
+}
+.c_word {
+      padding: 20px;
+      /* background-color: aqua; */
+      /* position: relative; */
+      /* right: 6rem; */
+}
+.c_word div {
+      letter-spacing: 3px;
+      text-align:right;
+      line-height: 45px;
+      width: 150px;
+      margin-top: 15px;
+      /* background-color: aqua; */
+      
+}
+.c_box {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align:center;
+      /* background-color: lightcoral; */
+      line-height: 30px;
+      /* border: 0.5px solid black; */
+      margin-top: 2px;
+}
+.c_box input {
+      width: 400px;
+      border-radius: 5px;
+      border-style: none; 
+      margin-top: 16px;
+      line-height: 35px;
+}
+.c_box input:invalid+span::before {
+      position: relative;
+      left: 10px;
+      content: "*";
+      color: red;
+}
+.c_box textarea {
+      width: 400px;
+      margin-top: 20px;
+      border-style: none;
+}
+.c_btn {
+      background-color: #979797;
+      color: white;
+      padding: 15px 50px;
+      border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+      .c_box input {
+            width: 210px;
+      }
+      .c_box textarea{
+            width: 210px;
+      }
+}
